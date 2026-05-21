@@ -6,7 +6,7 @@ let unityProfiler = (function () {
   return {
     createButton: (unityInstance) => {
       profilerButton = document.createElement('button');
-      profilerButton.style = 'background-color: lightgray; border: none; padding: 5px; cursor: pointer';
+      profilerButton.style.cssText = 'background-color: #312912; color: #e8d9a0; border: 2px solid #423718; padding: 5px 12px; cursor: pointer; font-family: "Londrina Solid", cursive; font-size: 16px;';
       profilerButton.innerHTML = unityInstance.IsConnectedToProfiler() ? 'Stop Profiling' : 'Profile';
 
       const startStatusUpdate = () => {
